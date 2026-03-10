@@ -4,7 +4,7 @@
 
 ## 🔐 Secrets 配置
 
-前往公库 **Settings → Secrets and variables → Actions → New repository secret** 添加以下变量：
+**Settings → Secrets and variables → Actions → New repository secret** 添加以下变量：
 
 | Secret 名 | 说明 | 示例 |
 |---|---|---|
