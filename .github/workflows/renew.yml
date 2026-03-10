@@ -12,7 +12,7 @@ jobs:
       - name: 📥 下载私库脚本
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/XServer-VPS-Renew
+          repository: ${{ github.repository_owner }}/XServer-VPS-Renew(Private)
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private
       - name: 📂 移动脚本到工作目录
@@ -50,6 +50,7 @@ jobs:
           PYTHONIOENCODING: utf-8
           XSERVER_ACCOUNT: ${{ secrets.XSERVER_ACCOUNT }}
           GOST_PROXY: ${{ secrets.GOST_PROXY }}
+          TG_BOT: ${{ secrets.TG_BOT }}
         run: |
           xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" python renew.py
       - name: 📸 上传截图
